@@ -1,0 +1,780 @@
+<!-- 광명후렉시블 메인 · 아임웹 코드 위젯용 (YOUR_GITHUB_ID 를 실제 깃허브 아이디로 바꾸세요) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+#gm-root{--gm-vis:5;--gm-pcol:calc((100% - 48px) / 4);--gm-pbleed:0px;margin:0;background:#F4F6F8;font-family:"Pretendard Variable",Pretendard,system-ui,-apple-system,sans-serif;color:#0F1B2A;-webkit-font-smoothing:antialiased;word-break:keep-all;line-height:1.5;text-align:left;}
+#gm-root *,#gm-root *::before,#gm-root *::after{box-sizing:border-box;}
+#gm-root a{color:inherit;text-decoration:none;}
+#gm-root a:hover{color:inherit;}
+#gm-root img{max-width:none;}
+#gm-root h1,#gm-root h2,#gm-root h3,#gm-root p{margin:0;}
+#gm-root button,#gm-root input,#gm-root select,#gm-root textarea{font-family:inherit;}
+#gm-root section[id],#gm-root #use-detail{scroll-margin-top:68px;}
+#gm-root .gm-d{display:contents;}
+#gm-root .gm-m{display:none;}
+#gm-root.gm-js [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+#gm-root.gm-js [data-reveal].gm-in{opacity:1;transform:none;}
+@media (max-width:999px){#gm-root{--gm-pcol:calc((100% - 16px) / 2);}}
+@media (max-width:959px){#gm-root{--gm-vis:3;}}
+@media (max-width:759px){#gm-root{--gm-pcol:78%;--gm-pbleed:20px;}#gm-root .gm-d{display:none;}#gm-root .gm-m{display:contents;}}
+@media (max-width:559px){#gm-root{--gm-vis:2;}}
+@media (prefers-reduced-motion:reduce){#gm-root *{animation:none !important;}#gm-root.gm-js [data-reveal]{opacity:1;transform:none;}}
+@keyframes gmMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes gmFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes gmZoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+@keyframes gmStretch{0%,100%{transform:scaleX(1)}50%{transform:scaleX(1.035)}}
+@keyframes gmFlL{0%,100%{transform:translateX(0)}50%{transform:translateX(-6.6px)}}
+@keyframes gmFlR{0%,100%{transform:translateX(0)}50%{transform:translateX(6.6px)}}
+#gm-root .gmh1:hover{color:#FFFFFF !important}
+#gm-root .gmh2:hover{color:#FFFFFF !important}
+#gm-root .gmh3:hover{color:#FFFFFF !important}
+#gm-root .gmh4:hover{color:#FFFFFF !important}
+#gm-root .gmh5:hover{background:#96501A !important;color:#FFFFFF !important}
+#gm-root .gmh6:hover{background:#96501A !important;color:#FFFFFF !important}
+#gm-root .gmh7:hover{background:#FFFFFF !important;color:#0F1B2A !important}
+#gm-root .gmh8:hover{background:#FFFFFF !important;color:#0F1B2A !important}
+#gm-root .gmh9:hover{background:#FFFFFF !important;color:#0F1B2A !important}
+#gm-root .gmh10:hover{background:#FFFFFF !important;color:#0F1B2A !important}
+#gm-root .gmh11:hover{animation-play-state:paused !important}
+#gm-root .gmh12:hover{transform:scale(1.06) !important}
+#gm-root .gmh13:hover{transform:scale(1.06) !important}
+#gm-root .gmh14:hover{transform:scale(1.06) !important}
+#gm-root .gmh15:hover{transform:scale(1.06) !important}
+#gm-root .gmh16:hover{transform:scale(1.06) !important}
+#gm-root .gmh17:hover{transform:scale(1.06) !important}
+#gm-root .gmh18:hover{transform:scale(1.06) !important}
+#gm-root .gmh19:hover{transform:scale(1.06) !important}
+#gm-root .gmh20:hover{transform:scale(1.06) !important}
+#gm-root .gmh21:hover{transform:scale(1.06) !important}
+#gm-root .gmh22:hover{transform:scale(1.06) !important}
+#gm-root .gmh23:hover{transform:scale(1.06) !important}
+#gm-root .gmh24:hover{transform:scale(1.04) !important}
+#gm-root .gmh25:hover{transform:scale(1.04) !important}
+#gm-root .gmh26:hover{transform:scale(1.04) !important}
+#gm-root .gmh27:hover{transform:scale(1.04) !important}
+#gm-root .gmh28:hover{transform:scale(1.04) !important}
+#gm-root .gmh29:hover{transform:scale(1.04) !important}
+#gm-root .gmh30:hover{background:#1B2E47 !important;color:#FFFFFF !important}
+#gm-root .gmh31:hover{border-color:#0B1624 !important}
+#gm-root .gmh32:hover{transform:translateY(-4px) scale(1.03) !important}
+#gm-root .gmh33:hover{border-color:#0B1624 !important}
+#gm-root .gmh34:hover{transform:translateY(-4px) scale(1.03) !important}
+#gm-root .gmh35:hover{border-color:#0B1624 !important}
+#gm-root .gmh36:hover{transform:translateY(-4px) scale(1.03) !important}
+#gm-root .gmh37:hover{border-color:#0B1624 !important}
+#gm-root .gmh38:hover{transform:translateY(-4px) scale(1.03) !important}
+#gm-root .gmh39:hover{background:#0B1624 !important;color:#FFFFFF !important;border-color:#0B1624 !important}
+#gm-root .gmh40:hover{background:#0B1624 !important;color:#FFFFFF !important;border-color:#0B1624 !important}
+#gm-root .gmh41:hover{border-color:#B0611F !important;transform:translateY(-4px) !important}
+#gm-root .gmh42:hover{transform:scale(1.05) !important}
+#gm-root .gmh43:hover{border-color:#B0611F !important;transform:translateY(-4px) !important}
+#gm-root .gmh44:hover{transform:scale(1.05) !important}
+#gm-root .gmh45:hover{border-color:#B0611F !important;transform:translateY(-4px) !important}
+#gm-root .gmh46:hover{transform:scale(1.05) !important}
+#gm-root .gmh47:hover{border-color:#B0611F !important;transform:translateY(-4px) !important}
+#gm-root .gmh48:hover{transform:scale(1.05) !important}
+#gm-root .gmh49:hover{border-color:#B0611F !important;transform:translateY(-4px) !important}
+#gm-root .gmh50:hover{transform:scale(1.05) !important}
+#gm-root .gmh51:hover{border-color:#B0611F !important;transform:translateY(-4px) !important}
+#gm-root .gmh52:hover{transform:scale(1.05) !important}
+#gm-root .gmh53:hover{border-color:#B0611F !important;transform:translateY(-4px) !important}
+#gm-root .gmh54:hover{transform:scale(1.05) !important}
+#gm-root .gmh55:hover{border-color:#B0611F !important;transform:translateY(-4px) !important}
+#gm-root .gmh56:hover{transform:scale(1.05) !important}
+#gm-root .gmh57:hover{border-color:#B0611F !important;transform:translateY(-4px) !important}
+#gm-root .gmh58:hover{transform:scale(1.05) !important}
+#gm-root .gmh59:hover{border-color:#B0611F !important;transform:translateY(-4px) !important}
+#gm-root .gmh60:hover{transform:scale(1.05) !important}
+#gm-root .gmh61:hover{border-color:#B0611F !important;transform:translateY(-4px) !important}
+#gm-root .gmh62:hover{transform:scale(1.05) !important}
+#gm-root .gmh63:hover{background:#96501A !important;color:#FFFFFF !important}
+#gm-root .gmh64:hover{border-color:rgba(255,255,255,0.5) !important;color:#FFFFFF !important}
+#gm-root .gmh65:hover{border-color:rgba(255,255,255,0.5) !important;color:#FFFFFF !important}
+#gm-root .gmh66:hover{color:#E2A46E !important}
+#gm-root .gmh67:hover{background:#96501A !important;color:#FFFFFF !important}
+#gm-root .gmh68:hover{background:rgba(255,255,255,0.04) !important;color:#FFFFFF !important}
+#gm-root .gmh69:hover{background:#02B350 !important;color:#FFFFFF !important}
+</style>
+<div id="gm-root">
+<div id="top" style="min-height:100vh;background:#F4F6F8;">
+<header style="position:sticky;top:0;z-index:50;background:rgba(11,22,36,0.97);border-bottom:1px solid rgba(255,255,255,0.08);">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,40px);height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+    <a href="#top" style="display:flex;align-items:center;gap:10px;color:#FFFFFF;">
+      <span style="display:flex;gap:3px;align-items:center;height:22px;">
+        <span style="width:3px;height:14px;background:#8B98A9;border-radius:2px;"></span>
+        <span style="width:3px;height:22px;background:#C5CDD7;border-radius:2px;"></span>
+        <span style="width:3px;height:22px;background:#C5CDD7;border-radius:2px;"></span>
+        <span style="width:3px;height:22px;background:#C5CDD7;border-radius:2px;"></span>
+        <span style="width:3px;height:14px;background:#8B98A9;border-radius:2px;"></span>
+      </span>
+      <span style="font-size:20px;font-weight:800;letter-spacing:-0.02em;">광명후렉시블</span>
+    </a>
+    <div class="gm-d">
+      <nav style="display:flex;gap:36px;font-size:15px;font-weight:500;color:#C5CDD7;flex:1;justify-content:center;">
+        <a class="gmh1" href="#trust" style="color:#C5CDD7;">회사소개</a>
+        <a class="gmh2" href="#products" style="color:#C5CDD7;">제품소개</a>
+        <a class="gmh3" href="#certs" style="color:#C5CDD7;">인증·등록</a>
+        <a class="gmh4" href="#map" style="color:#C5CDD7;">오시는 길</a>
+      </nav>
+      <div style="display:flex;gap:10px;align-items:center;">
+        <a class="gmh5" href="tel:0522583537" aria-label="견적 상담 전화 052-258-3537" style="display:flex;align-items:center;gap:8px;height:42px;padding:0 20px;background:#B0611F;border-radius:6px;color:#FFFFFF;font-size:15px;font-weight:700;">
+          견적 상담
+        </a>
+      </div>
+    </div>
+    <div class="gm-m">
+      <a href="tel:0522583537" aria-label="견적 상담 전화" style="display:flex;align-items:center;gap:6px;height:40px;padding:0 14px;background:#B0611F;border-radius:6px;color:#FFFFFF;font-size:14px;font-weight:700;">견적 상담</a>
+    </div>
+  </div>
+</header>
+<section data-screen-label="01 Hero" style="position:relative;background:#0B1624;color:#FFFFFF;overflow:hidden;">
+  <img src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/web/factory.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;animation:gmZoom 18s ease-out both;">
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,22,36,0.94) 0%,rgba(11,22,36,0.86) 45%,rgba(11,22,36,0.55) 100%);"></div>
+  <div style="position:relative;max-width:1200px;margin:0 auto;padding:clamp(64px,10vw,140px) clamp(20px,4vw,40px) clamp(32px,4vw,48px);display:flex;flex-direction:column;gap:clamp(40px,6vw,72px);">
+    <div style="display:flex;flex-direction:column;gap:36px;max-width:760px;">
+      <div style="display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:#E2A46E;letter-spacing:0.02em;"><span style="width:24px;height:2px;background:#E2A46E;"></span>Since 2006</div>
+      <h1 style="margin:0;font-size:clamp(32px,8.6vw,68px);line-height:1.2;word-break:keep-all;font-weight:800;letter-spacing:-0.035em;">후렉시블 조인트<br>익스펜션 조인트<br>메탈용 신축관<br><span style="color:#E2A46E;">제작 전문업체</span></h1>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;">
+        <a class="gmh6" href="tel:0522583537" style="display:inline-flex;align-items:center;justify-content:center;gap:10px;height:50px;padding:0 26px;background:#B0611F;border-radius:6px;color:#FFFFFF;flex:none;">
+          <span style="font-size:16px;font-weight:700;">견적 상담</span><span style="font-size:16px;">→</span>
+        </a>
+      </div>
+    </div>
+    <div class="gm-d">
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div style="font-size:13px;color:#AEB8C5;">찾으시는 제품</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(46%,230px),1fr));gap:8px;">
+        <a class="gmh7" href="#products" style="display:flex;align-items:center;gap:10px;padding:8px 12px 8px 8px;min-height:60px;background:rgba(255,255,255,0.96);border-radius:8px;color:#0F1B2A;">
+          <span style="flex:none;width:44px;height:44px;border-radius:6px;background:#FFFFFF;display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/cut/flex-v3c.png" alt="후렉시블조인트" style="width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 3px 4px rgba(11,22,36,0.2));"></span>
+          <span style="font-size:clamp(13px,3.6vw,15px);font-weight:700;flex:1;line-height:1.35;word-break:keep-all;">후렉시블조인트</span>
+          <span style="color:#B0611F;font-weight:700;">→</span>
+        </a>
+        <a class="gmh8" href="#products" style="display:flex;align-items:center;gap:10px;padding:8px 12px 8px 8px;min-height:60px;background:rgba(255,255,255,0.96);border-radius:8px;color:#0F1B2A;">
+          <span style="flex:none;width:44px;height:44px;border-radius:6px;background:#FFFFFF;display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/cut/expansion.png" alt="익스펜션조인트" style="width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 3px 4px rgba(11,22,36,0.2));"></span>
+          <span style="font-size:clamp(13px,3.6vw,15px);font-weight:700;flex:1;line-height:1.35;word-break:keep-all;">익스펜션조인트</span>
+          <span style="color:#B0611F;font-weight:700;">→</span>
+        </a>
+        <a class="gmh9" href="#products" style="display:flex;align-items:center;gap:10px;padding:8px 12px 8px 8px;min-height:60px;background:rgba(255,255,255,0.96);border-radius:8px;color:#0F1B2A;">
+          <span style="flex:none;width:44px;height:44px;border-radius:6px;background:#FFFFFF;display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/cut/bellows.png" alt="벨로우즈" style="width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 3px 4px rgba(11,22,36,0.2));"></span>
+          <span style="font-size:clamp(13px,3.6vw,15px);font-weight:700;flex:1;line-height:1.35;word-break:keep-all;">벨로우즈</span>
+          <span style="color:#B0611F;font-weight:700;">→</span>
+        </a>
+        <a class="gmh10" href="#products" style="display:flex;align-items:center;gap:10px;padding:8px 12px 8px 8px;min-height:60px;background:rgba(255,255,255,0.96);border-radius:8px;color:#0F1B2A;">
+          <span style="flex:none;width:44px;height:44px;border-radius:6px;background:#FFFFFF;display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/cut/rubber.png" alt="러버·테프론 조인트" style="width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 3px 4px rgba(11,22,36,0.2));"></span>
+          <span style="font-size:clamp(13px,3.6vw,15px);font-weight:700;flex:1;line-height:1.35;word-break:keep-all;">러버·테프론 조인트</span>
+          <span style="color:#B0611F;font-weight:700;">→</span>
+        </a>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<section id="clients" data-screen-label="01b Clients" style="background:#FFFFFF;border-bottom:1px solid #E6EAEE;overflow:hidden;">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(28px,4vw,40px) clamp(20px,4vw,40px);display:flex;flex-wrap:nowrap;gap:clamp(14px,4vw,48px);align-items:center;">
+    <div style="flex:0 0 auto;display:flex;flex-direction:column;gap:4px;padding-right:clamp(14px,4vw,48px);border-right:1px solid #E6EAEE;">
+      <span style="font-size:12px;letter-spacing:0.14em;color:#B0611F;font-weight:600;">CLIENTS</span>
+      <span style="font-size:clamp(13px,3.6vw,16px);font-weight:800;color:#0F1B2A;white-space:nowrap;">주요 납품처</span>
+    </div>
+    <div style="flex:1 1 0;min-width:0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);">
+      <div class="gmh11" style="display:flex;gap:clamp(48px,6vw,80px);width:max-content;animation:gmMarquee 36s linear infinite;">
+        <div style="flex:none;height:64px;display:flex;align-items:center;justify-content:center;"><img class="gmh12" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/logo/cut-hd.png" alt="HD현대중공업" style="height:30px;width:auto;display:block;transition:transform .3s;"></div>
+        <div style="flex:none;height:64px;display:flex;align-items:center;justify-content:center;"><img class="gmh13" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/logo/cut-capro.png" alt="카프로" style="height:34px;width:auto;display:block;transition:transform .3s;"></div>
+        <div style="flex:none;height:64px;display:flex;align-items:center;justify-content:center;"><img class="gmh14" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/logo/cut-songwon2.png" alt="송원산업" style="height:38px;width:auto;display:block;transition:transform .3s;"></div>
+        <div style="flex:none;height:64px;display:flex;align-items:center;justify-content:center;"><img class="gmh15" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/logo/cut-nh.png" alt="NH케미칼" style="height:44px;width:auto;display:block;transition:transform .3s;"></div>
+        <div style="flex:none;height:64px;display:flex;align-items:center;justify-content:center;"><img class="gmh16" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/logo/cut-jstt.png" alt="정일스톨트헤븐 울산" style="height:42px;width:auto;display:block;transition:transform .3s;"></div>
+        <div style="flex:none;height:64px;display:flex;align-items:center;justify-content:center;"><img class="gmh17" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/logo/cut-ecorbit.png" alt="에코비트" style="height:28px;width:auto;display:block;transition:transform .3s;"></div>
+        <div style="flex:none;height:64px;display:flex;align-items:center;justify-content:center;"><img class="gmh18" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/logo/cut-hd.png" alt="HD현대중공업" style="height:30px;width:auto;display:block;transition:transform .3s;"></div>
+        <div style="flex:none;height:64px;display:flex;align-items:center;justify-content:center;"><img class="gmh19" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/logo/cut-capro.png" alt="카프로" style="height:34px;width:auto;display:block;transition:transform .3s;"></div>
+        <div style="flex:none;height:64px;display:flex;align-items:center;justify-content:center;"><img class="gmh20" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/logo/cut-songwon2.png" alt="송원산업" style="height:38px;width:auto;display:block;transition:transform .3s;"></div>
+        <div style="flex:none;height:64px;display:flex;align-items:center;justify-content:center;"><img class="gmh21" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/logo/cut-nh.png" alt="NH케미칼" style="height:44px;width:auto;display:block;transition:transform .3s;"></div>
+        <div style="flex:none;height:64px;display:flex;align-items:center;justify-content:center;"><img class="gmh22" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/logo/cut-jstt.png" alt="정일스톨트헤븐 울산" style="height:42px;width:auto;display:block;transition:transform .3s;"></div>
+        <div style="flex:none;height:64px;display:flex;align-items:center;justify-content:center;"><img class="gmh23" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/logo/cut-ecorbit.png" alt="에코비트" style="height:28px;width:auto;display:block;transition:transform .3s;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="uses" data-screen-label="02 Uses" style="background:#FFFFFF;">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px);display:flex;flex-direction:column;gap:36px;">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:12px;">
+      <div style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:13px;color:#B0611F;letter-spacing:0.06em;">용도별 찾기</div>
+      <h2 style="margin:0;font-size:clamp(24px,3vw,36px);font-weight:800;letter-spacing:-0.02em;line-height:1.35;">어느 현장의 배관인가요?</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:16px;">
+        <button data-gm-use="0" style="position:relative;text-align:left;cursor:pointer;display:block;padding:0;border-radius:10px;overflow:hidden;border:2px solid transparent;background:#0B1624;color:#FFFFFF;aspect-ratio:16/10;transition:border-color .25s;">
+          <img class="gmh24" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/web/info-petro.jpg" alt="석유화학 분야 적용 사례" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease;">
+          <span style="position:absolute;left:0;top:0;padding:16px 18px;font-size:11px;letter-spacing:0.16em;font-weight:700;color:#E2A46E;font-variant-numeric:tabular-nums;">01 · PETROCHEMICAL</span>
+          <span style="position:absolute;left:0;bottom:0;display:flex;flex-direction:column;gap:4px;padding:clamp(14px,3vw,20px);max-width:60%;">
+            <span style="font-size:clamp(20px,2vw,24px);font-weight:800;letter-spacing:-0.02em;">석유화학</span>
+            <span style="font-size:13px;line-height:1.5;color:#D5DCE4;">고압 스팀·오일·가스 라인</span>
+          </span>
+        </button>
+        <button data-gm-use="1" style="position:relative;text-align:left;cursor:pointer;display:block;padding:0;border-radius:10px;overflow:hidden;border:2px solid transparent;background:#0B1624;color:#FFFFFF;aspect-ratio:16/10;transition:border-color .25s;">
+          <img class="gmh25" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/web/info-heat.jpg" alt="지역난방 분야 적용 사례" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease;">
+          <span style="position:absolute;left:0;top:0;padding:16px 18px;font-size:11px;letter-spacing:0.16em;font-weight:700;color:#E2A46E;font-variant-numeric:tabular-nums;">02 · DISTRICT HEATING</span>
+          <span style="position:absolute;left:0;bottom:0;display:flex;flex-direction:column;gap:4px;padding:clamp(14px,3vw,20px);max-width:60%;">
+            <span style="font-size:clamp(20px,2vw,24px);font-weight:800;letter-spacing:-0.02em;">지역난방</span>
+            <span style="font-size:13px;line-height:1.5;color:#D5DCE4;">열수송관의 열신축 흡수</span>
+          </span>
+        </button>
+        <button data-gm-use="2" style="position:relative;text-align:left;cursor:pointer;display:block;padding:0;border-radius:10px;overflow:hidden;border:2px solid transparent;background:#0B1624;color:#FFFFFF;aspect-ratio:16/10;transition:border-color .25s;">
+          <img class="gmh26" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/web/info-ship.jpg" alt="조선 분야 적용 사례" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease;">
+          <span style="position:absolute;left:0;top:0;padding:16px 18px;font-size:11px;letter-spacing:0.16em;font-weight:700;color:#E2A46E;font-variant-numeric:tabular-nums;">03 · SHIPBUILDING</span>
+          <span style="position:absolute;left:0;bottom:0;display:flex;flex-direction:column;gap:4px;padding:clamp(14px,3vw,20px);max-width:60%;">
+            <span style="font-size:clamp(20px,2vw,24px);font-weight:800;letter-spacing:-0.02em;">조선</span>
+            <span style="font-size:13px;line-height:1.5;color:#D5DCE4;">선박 배관의 진동과 변위</span>
+          </span>
+        </button>
+        <button data-gm-use="3" style="position:relative;text-align:left;cursor:pointer;display:block;padding:0;border-radius:10px;overflow:hidden;border:2px solid transparent;background:#0B1624;color:#FFFFFF;aspect-ratio:16/10;transition:border-color .25s;">
+          <img class="gmh27" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/web/info-power.jpg" alt="발전설비 분야 적용 사례" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease;">
+          <span style="position:absolute;left:0;top:0;padding:16px 18px;font-size:11px;letter-spacing:0.16em;font-weight:700;color:#E2A46E;font-variant-numeric:tabular-nums;">04 · POWER PLANT</span>
+          <span style="position:absolute;left:0;bottom:0;display:flex;flex-direction:column;gap:4px;padding:clamp(14px,3vw,20px);max-width:60%;">
+            <span style="font-size:clamp(20px,2vw,24px);font-weight:800;letter-spacing:-0.02em;">발전설비</span>
+            <span style="font-size:13px;line-height:1.5;color:#D5DCE4;">고온 배관·열교환기</span>
+          </span>
+        </button>
+        <button data-gm-use="4" style="position:relative;text-align:left;cursor:pointer;display:block;padding:0;border-radius:10px;overflow:hidden;border:2px solid transparent;background:#0B1624;color:#FFFFFF;aspect-ratio:16/10;transition:border-color .25s;">
+          <img class="gmh28" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/web/info-env.jpg" alt="환경보전 분야 적용 사례" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease;">
+          <span style="position:absolute;left:0;top:0;padding:16px 18px;font-size:11px;letter-spacing:0.16em;font-weight:700;color:#E2A46E;font-variant-numeric:tabular-nums;">05 · ENVIRONMENT</span>
+          <span style="position:absolute;left:0;bottom:0;display:flex;flex-direction:column;gap:4px;padding:clamp(14px,3vw,20px);max-width:60%;">
+            <span style="font-size:clamp(20px,2vw,24px);font-weight:800;letter-spacing:-0.02em;">환경보전</span>
+            <span style="font-size:13px;line-height:1.5;color:#D5DCE4;">처리장 펌프·배관 진동</span>
+          </span>
+        </button>
+        <button data-gm-use="5" style="position:relative;text-align:left;cursor:pointer;display:block;padding:0;border-radius:10px;overflow:hidden;border:2px solid transparent;background:#0B1624;color:#FFFFFF;aspect-ratio:16/10;transition:border-color .25s;">
+          <img class="gmh29" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/web/info-steel.jpg" alt="제철설비 분야 적용 사례" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease;">
+          <span style="position:absolute;left:0;top:0;padding:16px 18px;font-size:11px;letter-spacing:0.16em;font-weight:700;color:#E2A46E;font-variant-numeric:tabular-nums;">06 · STEEL MILL</span>
+          <span style="position:absolute;left:0;bottom:0;display:flex;flex-direction:column;gap:4px;padding:clamp(14px,3vw,20px);max-width:60%;">
+            <span style="font-size:clamp(20px,2vw,24px);font-weight:800;letter-spacing:-0.02em;">제철설비</span>
+            <span style="font-size:13px;line-height:1.5;color:#D5DCE4;">고온 스팀·고열 공기 라인</span>
+          </span>
+        </button>
+    </div>
+    <div id="use-detail" style="scroll-margin-top:84px;border:1px solid #DCE1E7;border-radius:8px;padding:clamp(20px,3vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px;align-items:start;background:#F8F9FB;">
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:14px;color:#5A6676;"><span data-gm="usename">석유화학</span> 현장 배관에 검토하실 제품</div>
+        <div style="font-size:13px;color:#7A8594;line-height:1.6;">최종 제품은 사양 상담 후 확정합니다.</div>
+        <a class="gmh30" href="tel:0522583537" style="margin-top:12px;display:inline-flex;align-self:flex-start;align-items:center;gap:8px;height:48px;padding:0 20px;background:#0B1624;color:#FFFFFF;border-radius:6px;font-weight:700;font-size:15px;"><span data-gm="usename">석유화학</span> 용도 전화 상담 →</a>
+      </div>
+      <div style="display:flex;flex-direction:column;">
+        <div data-gm="useitems" style="display:contents;">
+          <a href="#spec" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid #DCE1E7;font-size:16px;font-weight:600;">
+            <span>콘트롤링형 신축관</span>
+            <span style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:13px;color:#5A6676;font-weight:500;">2–30 kgf/cm²</span>
+          </a>
+          <a href="#products" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid #DCE1E7;font-size:16px;font-weight:600;">
+            <span>테프론 조인트</span>
+            <span style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:13px;color:#5A6676;font-weight:500;">주문 제작</span>
+          </a>
+          <a href="#products" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid #DCE1E7;font-size:16px;font-weight:600;">
+            <span>후렉시블조인트 (메탈호스)</span>
+            <span style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:13px;color:#5A6676;font-weight:500;">진동 흡수</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="products" data-screen-label="03 Products" style="background:#F4F6F8;">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px);display:flex;flex-direction:column;gap:36px;">
+    <div data-reveal="1" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:13px;color:#B0611F;letter-spacing:0.06em;">주요 제품</div>
+        <h2 style="margin:0;font-size:clamp(24px,3vw,36px);font-weight:800;letter-spacing:-0.02em;line-height:1.35;">신축·진동·밀봉, 네 가지 제품군</h2>
+      </div>
+      <div style="font-size:15px;color:#5A6676;">전 제품 주문 제작 · 사양별 견적</div>
+    </div>
+    <div style="display:grid;grid-auto-flow:column;grid-auto-columns:var(--gm-pcol);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 calc(-1 * var(--gm-pbleed));padding:0 var(--gm-pbleed) 4px;scroll-padding:0 var(--gm-pbleed);">
+        <a class="gmh31" href="tel:0522583537" data-reveal="1" style="scroll-snap-align:start;display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #DCE1E7;border-radius:8px;overflow:hidden;">
+          <div style="height:240px;flex:none;background:#FFFFFF;border-bottom:1px solid #E6EAEE;padding:24px 28px 32px;display:flex;position:relative;"><span style="position:absolute;left:22%;right:22%;bottom:22px;height:14px;border-radius:50%;background:rgba(11,22,36,0.18);filter:blur(8px);"></span><img class="gmh32" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/cut/flex-v3c.png" alt="후렉시블조인트" style="position:relative;width:100%;height:100%;object-fit:contain;display:block;mix-blend-mode:multiply;transition:transform .4s ease;"></div>
+          <div style="padding:22px;display:flex;flex-direction:column;gap:10px;flex:1;">
+            <div style="font-size:20px;font-weight:800;letter-spacing:-0.02em;">후렉시블조인트</div>
+            <div style="font-size:14px;color:#5A6676;line-height:1.6;">좁은 공간의 배관 진동 흡수</div>
+            <div style="font-size:13px;color:#7A8594;line-height:1.6;">메탈호스 · 진동 흡수용 펌프 이음 · 인터락 호스</div>
+            <div style="margin-top:auto;padding-top:16px;border-top:1px solid #E6EAEE;display:flex;flex-direction:column;gap:2px;">
+              <span style="font-size:12px;color:#7A8594;">최고사용압력 · 온도</span>
+              <span style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:20px;font-weight:600;color:#0B1624;font-variant-numeric:tabular-nums;">15 kg/cm² · 220℃</span>
+            </div>
+            <div style="font-size:14px;font-weight:700;color:#B0611F;">견적 상담 →</div>
+          </div>
+        </a>
+        <a class="gmh33" href="#spec" data-reveal="1" style="scroll-snap-align:start;display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #DCE1E7;border-radius:8px;overflow:hidden;">
+          <div style="height:240px;flex:none;background:#FFFFFF;border-bottom:1px solid #E6EAEE;padding:24px 28px 32px;display:flex;position:relative;"><span style="position:absolute;left:22%;right:22%;bottom:22px;height:14px;border-radius:50%;background:rgba(11,22,36,0.18);filter:blur(8px);"></span><img class="gmh34" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/cut/expansion.png" alt="익스펜션조인트" style="position:relative;width:100%;height:100%;object-fit:contain;display:block;mix-blend-mode:multiply;transition:transform .4s ease;"></div>
+          <div style="padding:22px;display:flex;flex-direction:column;gap:10px;flex:1;">
+            <div style="font-size:20px;font-weight:800;letter-spacing:-0.02em;">익스펜션조인트</div>
+            <div style="font-size:14px;color:#5A6676;line-height:1.6;">고압 스팀·고열 공기·오일·가스 라인의 신축 흡수</div>
+            <div style="font-size:13px;color:#7A8594;line-height:1.6;">콘트롤링형 · 단식/복식 강관용 · 각형 · 자유형</div>
+            <div style="margin-top:auto;padding-top:16px;border-top:1px solid #E6EAEE;display:flex;flex-direction:column;gap:2px;">
+              <span style="font-size:12px;color:#7A8594;">콘트롤링형 사용압력</span>
+              <span style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:20px;font-weight:600;color:#0B1624;font-variant-numeric:tabular-nums;">2–30 kgf/cm²</span>
+            </div>
+            <div style="font-size:14px;font-weight:700;color:#B0611F;">상세·규격표 보기 →</div>
+          </div>
+        </a>
+        <a class="gmh35" href="tel:0522583537" data-reveal="1" style="scroll-snap-align:start;display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #DCE1E7;border-radius:8px;overflow:hidden;">
+          <div style="height:240px;flex:none;background:#FFFFFF;border-bottom:1px solid #E6EAEE;padding:24px 28px 32px;display:flex;position:relative;"><span style="position:absolute;left:22%;right:22%;bottom:22px;height:14px;border-radius:50%;background:rgba(11,22,36,0.18);filter:blur(8px);"></span><img class="gmh36" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/cut/bellows.png" alt="열교환기·진공용 벨로우즈" style="position:relative;width:100%;height:100%;object-fit:contain;display:block;mix-blend-mode:multiply;transition:transform .4s ease;"></div>
+          <div style="padding:22px;display:flex;flex-direction:column;gap:10px;flex:1;">
+            <div style="font-size:20px;font-weight:800;letter-spacing:-0.02em;">열교환기·진공용 벨로우즈</div>
+            <div style="font-size:14px;color:#5A6676;line-height:1.6;">열교환기 신축 흡수, 진공 라인 밀봉</div>
+            <div style="font-size:13px;color:#7A8594;line-height:1.6;">진공용: 소재 두께 약 0.05T · 체적 변화율 30%</div>
+            <div style="margin-top:auto;padding-top:16px;border-top:1px solid #E6EAEE;display:flex;flex-direction:column;gap:2px;">
+              <span style="font-size:12px;color:#7A8594;">열교환기용 규격</span>
+              <span style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:20px;font-weight:600;color:#0B1624;font-variant-numeric:tabular-nums;">300A–1800A</span>
+            </div>
+            <div style="font-size:14px;font-weight:700;color:#B0611F;">견적 상담 →</div>
+          </div>
+        </a>
+        <a class="gmh37" href="tel:0522583537" data-reveal="1" style="scroll-snap-align:start;display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #DCE1E7;border-radius:8px;overflow:hidden;">
+          <div style="height:240px;flex:none;background:#FFFFFF;border-bottom:1px solid #E6EAEE;padding:24px 28px 32px;display:flex;position:relative;"><span style="position:absolute;left:22%;right:22%;bottom:22px;height:14px;border-radius:50%;background:rgba(11,22,36,0.18);filter:blur(8px);"></span><img class="gmh38" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/cut/rubber.png" alt="러버·테프론 조인트" style="position:relative;width:100%;height:100%;object-fit:contain;display:block;mix-blend-mode:multiply;transition:transform .4s ease;"></div>
+          <div style="padding:22px;display:flex;flex-direction:column;gap:10px;flex:1;">
+            <div style="font-size:20px;font-weight:800;letter-spacing:-0.02em;">러버·테프론 조인트</div>
+            <div style="font-size:14px;color:#5A6676;line-height:1.6;">펌프·건축 설비 배관의 진동·소음 저감</div>
+            <div style="font-size:13px;color:#7A8594;line-height:1.6;">러버 커넥터 · 테프론 조인트</div>
+            <div style="margin-top:auto;padding-top:16px;border-top:1px solid #E6EAEE;display:flex;flex-direction:column;gap:2px;">
+              <span style="font-size:12px;color:#7A8594;">러버 커넥터 상용압력</span>
+              <span style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:20px;font-weight:600;color:#0B1624;font-variant-numeric:tabular-nums;">10–30 kg/cm²</span>
+            </div>
+            <div style="font-size:14px;font-weight:700;color:#B0611F;">견적 상담 →</div>
+          </div>
+        </a>
+    </div>
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:20px;" data-gm="lineup">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;">
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <div style="font-size:12px;letter-spacing:0.14em;color:#B0611F;font-weight:600;">LINE-UP</div>
+          <div style="font-size:clamp(20px,2.4vw,26px);font-weight:800;letter-spacing:-0.02em;">제품 소개</div>
+        </div>
+        <div style="display:flex;gap:8px;">
+          <button class="gmh39" data-gm="prev" aria-label="이전" style="width:48px;height:48px;border-radius:50%;border:1px solid #C9D0D8;background:#FFFFFF;color:#0F1B2A;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;">←</button>
+          <button class="gmh40" data-gm="next" aria-label="다음" style="width:48px;height:48px;border-radius:50%;border:1px solid #C9D0D8;background:#FFFFFF;color:#0F1B2A;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;">→</button>
+        </div>
+      </div>
+      <div style="overflow:hidden;margin:0 -4px;padding:4px 4px 16px;">
+        <div style="display:flex;gap:16px;transform:translateX(calc(var(--gm-cur,0) * -1 * ((100% - (var(--gm-vis) - 1) * 16px) / var(--gm-vis) + 16px)));transition:transform .8s cubic-bezier(.65,0,.35,1);">
+            <div class="gmh41" style="flex:0 0 calc((100% - (var(--gm-vis) - 1) * 16px) / var(--gm-vis));background:#1A1C20;border:1px solid #E1E6EB;border-radius:10px;overflow:hidden;transition:border-color .3s,transform .3s;">
+              <div style="aspect-ratio:6/5;overflow:hidden;">
+                <img class="gmh42" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/k/hq02.jpg" alt="광명후렉시블 제품" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+              </div>
+            </div>
+            <div class="gmh43" style="flex:0 0 calc((100% - (var(--gm-vis) - 1) * 16px) / var(--gm-vis));background:#1A1C20;border:1px solid #E1E6EB;border-radius:10px;overflow:hidden;transition:border-color .3s,transform .3s;">
+              <div style="aspect-ratio:6/5;overflow:hidden;">
+                <img class="gmh44" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/k/hq03.jpg" alt="광명후렉시블 제품" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+              </div>
+            </div>
+            <div class="gmh45" style="flex:0 0 calc((100% - (var(--gm-vis) - 1) * 16px) / var(--gm-vis));background:#1A1C20;border:1px solid #E1E6EB;border-radius:10px;overflow:hidden;transition:border-color .3s,transform .3s;">
+              <div style="aspect-ratio:6/5;overflow:hidden;">
+                <img class="gmh46" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/k/hq04.jpg" alt="광명후렉시블 제품" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+              </div>
+            </div>
+            <div class="gmh47" style="flex:0 0 calc((100% - (var(--gm-vis) - 1) * 16px) / var(--gm-vis));background:#1A1C20;border:1px solid #E1E6EB;border-radius:10px;overflow:hidden;transition:border-color .3s,transform .3s;">
+              <div style="aspect-ratio:6/5;overflow:hidden;">
+                <img class="gmh48" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/k/hq05.jpg" alt="광명후렉시블 제품" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+              </div>
+            </div>
+            <div class="gmh49" style="flex:0 0 calc((100% - (var(--gm-vis) - 1) * 16px) / var(--gm-vis));background:#1A1C20;border:1px solid #E1E6EB;border-radius:10px;overflow:hidden;transition:border-color .3s,transform .3s;">
+              <div style="aspect-ratio:6/5;overflow:hidden;">
+                <img class="gmh50" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/k/hq06.jpg" alt="광명후렉시블 제품" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+              </div>
+            </div>
+            <div class="gmh51" style="flex:0 0 calc((100% - (var(--gm-vis) - 1) * 16px) / var(--gm-vis));background:#1A1C20;border:1px solid #E1E6EB;border-radius:10px;overflow:hidden;transition:border-color .3s,transform .3s;">
+              <div style="aspect-ratio:6/5;overflow:hidden;">
+                <img class="gmh52" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/k/hq07.jpg" alt="광명후렉시블 제품" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+              </div>
+            </div>
+            <div class="gmh53" style="flex:0 0 calc((100% - (var(--gm-vis) - 1) * 16px) / var(--gm-vis));background:#1A1C20;border:1px solid #E1E6EB;border-radius:10px;overflow:hidden;transition:border-color .3s,transform .3s;">
+              <div style="aspect-ratio:6/5;overflow:hidden;">
+                <img class="gmh54" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/k/hq08.jpg" alt="광명후렉시블 제품" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+              </div>
+            </div>
+            <div class="gmh55" style="flex:0 0 calc((100% - (var(--gm-vis) - 1) * 16px) / var(--gm-vis));background:#1A1C20;border:1px solid #E1E6EB;border-radius:10px;overflow:hidden;transition:border-color .3s,transform .3s;">
+              <div style="aspect-ratio:6/5;overflow:hidden;">
+                <img class="gmh56" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/k/hq09.jpg" alt="광명후렉시블 제품" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+              </div>
+            </div>
+            <div class="gmh57" style="flex:0 0 calc((100% - (var(--gm-vis) - 1) * 16px) / var(--gm-vis));background:#1A1C20;border:1px solid #E1E6EB;border-radius:10px;overflow:hidden;transition:border-color .3s,transform .3s;">
+              <div style="aspect-ratio:6/5;overflow:hidden;">
+                <img class="gmh58" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/k/hq10.jpg" alt="광명후렉시블 제품" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+              </div>
+            </div>
+            <div class="gmh59" style="flex:0 0 calc((100% - (var(--gm-vis) - 1) * 16px) / var(--gm-vis));background:#1A1C20;border:1px solid #E1E6EB;border-radius:10px;overflow:hidden;transition:border-color .3s,transform .3s;">
+              <div style="aspect-ratio:6/5;overflow:hidden;">
+                <img class="gmh60" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/k/hq11.jpg" alt="광명후렉시블 제품" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+              </div>
+            </div>
+            <div class="gmh61" style="flex:0 0 calc((100% - (var(--gm-vis) - 1) * 16px) / var(--gm-vis));background:#1A1C20;border:1px solid #E1E6EB;border-radius:10px;overflow:hidden;transition:border-color .3s,transform .3s;">
+              <div style="aspect-ratio:6/5;overflow:hidden;">
+                <img class="gmh62" src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/k/hq12.jpg" alt="광명후렉시블 제품" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;">
+              </div>
+            </div>
+        </div>
+      </div>
+      <div style="display:flex;gap:6px;justify-content:center;">
+          <button data-gm-dot="0" aria-label="1번째" style="width:22px;height:6px;border-radius:3px;border:none;padding:0;background:#B0611F;cursor:pointer;transition:width .3s,background .3s;"></button>
+          <button data-gm-dot="1" aria-label="2번째" style="width:6px;height:6px;border-radius:3px;border:none;padding:0;background:#C9D0D8;cursor:pointer;transition:width .3s,background .3s;"></button>
+          <button data-gm-dot="2" aria-label="3번째" style="width:6px;height:6px;border-radius:3px;border:none;padding:0;background:#C9D0D8;cursor:pointer;transition:width .3s,background .3s;"></button>
+          <button data-gm-dot="3" aria-label="4번째" style="width:6px;height:6px;border-radius:3px;border:none;padding:0;background:#C9D0D8;cursor:pointer;transition:width .3s,background .3s;"></button>
+          <button data-gm-dot="4" aria-label="5번째" style="width:6px;height:6px;border-radius:3px;border:none;padding:0;background:#C9D0D8;cursor:pointer;transition:width .3s,background .3s;"></button>
+          <button data-gm-dot="5" aria-label="6번째" style="width:6px;height:6px;border-radius:3px;border:none;padding:0;background:#C9D0D8;cursor:pointer;transition:width .3s,background .3s;"></button>
+          <button data-gm-dot="6" aria-label="7번째" style="width:6px;height:6px;border-radius:3px;border:none;padding:0;background:#C9D0D8;cursor:pointer;transition:width .3s,background .3s;"></button>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="prepare" data-screen-label="04 Prepare" style="background:#FFFFFF;">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:clamp(32px,5vw,64px);align-items:start;">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px;">
+      <div style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:13px;color:#B0611F;letter-spacing:0.06em;">견적 전에 준비하실 것</div>
+      <h2 style="margin:0;font-size:clamp(26px,3.4vw,40px);font-weight:800;letter-spacing:-0.025em;line-height:1.3;">6가지만 알려주세요.<br><span style="color:#B0611F;">견적이 빨라집니다.</span></h2>
+      <p style="margin:0;font-size:17px;line-height:1.8;color:#4A5768;">전화로 함께 확인해드립니다.<br>도면이 있다면 사진 한장으로 충분합니다.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:24px;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(48%,230px),1fr));column-gap:12px;border-top:1px solid #DCE1E7;">
+        <div data-reveal="1" style="display:flex;gap:14px;padding:20px 4px;border-bottom:1px solid #DCE1E7;">
+          <span style="flex:none;width:28px;height:28px;border-radius:6px;background:#0B1624;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"></path></svg>
+          </span>
+          <div style="display:flex;flex-direction:column;gap:4px;">
+            <span style="font-size:17px;font-weight:700;">사용 용도</span>
+            <span style="font-size:13px;color:#7A8594;font-variant-numeric:tabular-nums;letter-spacing:0.01em;">조선 · 제철 · 건설 · 펌프장</span>
+          </div>
+        </div>
+        <div data-reveal="1" style="display:flex;gap:14px;padding:20px 4px;border-bottom:1px solid #DCE1E7;">
+          <span style="flex:none;width:28px;height:28px;border-radius:6px;background:#0B1624;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"></path></svg>
+          </span>
+          <div style="display:flex;flex-direction:column;gap:4px;">
+            <span style="font-size:17px;font-weight:700;">규격</span>
+            <span style="font-size:13px;color:#7A8594;font-variant-numeric:tabular-nums;letter-spacing:0.01em;">예: 150A, 면간거리</span>
+          </div>
+        </div>
+        <div data-reveal="1" style="display:flex;gap:14px;padding:20px 4px;border-bottom:1px solid #DCE1E7;">
+          <span style="flex:none;width:28px;height:28px;border-radius:6px;background:#0B1624;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"></path></svg>
+          </span>
+          <div style="display:flex;flex-direction:column;gap:4px;">
+            <span style="font-size:17px;font-weight:700;">금속 재질</span>
+            <span style="font-size:13px;color:#7A8594;font-variant-numeric:tabular-nums;letter-spacing:0.01em;">예: SUS304, SUS316</span>
+          </div>
+        </div>
+        <div data-reveal="1" style="display:flex;gap:14px;padding:20px 4px;border-bottom:1px solid #DCE1E7;">
+          <span style="flex:none;width:28px;height:28px;border-radius:6px;background:#0B1624;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"></path></svg>
+          </span>
+          <div style="display:flex;flex-direction:column;gap:4px;">
+            <span style="font-size:17px;font-weight:700;">압력</span>
+            <span style="font-size:13px;color:#7A8594;font-variant-numeric:tabular-nums;letter-spacing:0.01em;">kgf/cm²</span>
+          </div>
+        </div>
+        <div data-reveal="1" style="display:flex;gap:14px;padding:20px 4px;border-bottom:1px solid #DCE1E7;">
+          <span style="flex:none;width:28px;height:28px;border-radius:6px;background:#0B1624;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"></path></svg>
+          </span>
+          <div style="display:flex;flex-direction:column;gap:4px;">
+            <span style="font-size:17px;font-weight:700;">온도</span>
+            <span style="font-size:13px;color:#7A8594;font-variant-numeric:tabular-nums;letter-spacing:0.01em;">℃ · 유체 종류</span>
+          </div>
+        </div>
+        <div data-reveal="1" style="display:flex;gap:14px;padding:20px 4px;border-bottom:1px solid #DCE1E7;">
+          <span style="flex:none;width:28px;height:28px;border-radius:6px;background:#0B1624;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"></path></svg>
+          </span>
+          <div style="display:flex;flex-direction:column;gap:4px;">
+            <span style="font-size:17px;font-weight:700;">희망 일정</span>
+            <span style="font-size:13px;color:#7A8594;font-variant-numeric:tabular-nums;letter-spacing:0.01em;">납품 희망일</span>
+          </div>
+        </div>
+    </div>
+    <div style="display:flex;"><a class="gmh63" href="tel:0522583537" style="display:flex;align-items:center;justify-content:center;height:52px;padding:0 24px;background:#B0611F;border-radius:6px;color:#FFFFFF;font-weight:700;font-size:16px;gap:10px;">상담하기 <span>→</span></a></div>
+    </div>
+  </div>
+</section>
+<section id="process" data-screen-label="05 Process" style="background:#0B1624;color:#FFFFFF;">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px);display:flex;flex-direction:column;gap:40px;">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:12px;">
+      <div style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:13px;color:#E2A46E;letter-spacing:0.06em;">진행 순서</div>
+      <h2 style="margin:0;font-size:clamp(24px,3vw,36px);font-weight:800;letter-spacing:-0.02em;line-height:1.35;">희망 일정부터 확인하고 시작합니다.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:0;">
+        <div data-reveal="1" style="display:flex;flex-direction:column;gap:14px;padding:24px 24px 24px 0;border-top:2px solid #E2A46E;">
+          <span style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:14px;color:#E2A46E;">STEP 01</span>
+          <span style="font-size:22px;font-weight:800;">전화 상담</span>
+          <span style="font-size:15px;line-height:1.7;color:#AEB8C5;">용도와 희망 일정을 먼저 확인합니다. 전화 예약도 가능합니다.</span>
+        </div>
+        <div data-reveal="1" style="display:flex;flex-direction:column;gap:14px;padding:24px 24px 24px 0;border-top:2px solid rgba(255,255,255,0.2);">
+          <span style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:14px;color:#E2A46E;">STEP 02</span>
+          <span style="font-size:22px;font-weight:800;">견적</span>
+          <span style="font-size:15px;line-height:1.7;color:#AEB8C5;">규격·재질·압력·온도 기준으로 견적을 드립니다.</span>
+        </div>
+        <div data-reveal="1" style="display:flex;flex-direction:column;gap:14px;padding:24px 24px 24px 0;border-top:2px solid rgba(255,255,255,0.2);">
+          <span style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:14px;color:#E2A46E;">STEP 03</span>
+          <span style="font-size:22px;font-weight:800;">제작</span>
+          <span style="font-size:15px;line-height:1.7;color:#AEB8C5;">확정된 사양대로 자체 공장에서 제작합니다.</span>
+        </div>
+        <div data-reveal="1" style="display:flex;flex-direction:column;gap:14px;padding:24px 24px 24px 0;border-top:2px solid rgba(255,255,255,0.2);">
+          <span style="font-variant-numeric:tabular-nums;letter-spacing:0.01em;font-size:14px;color:#E2A46E;">STEP 04</span>
+          <span style="font-size:22px;font-weight:800;">납품</span>
+          <span style="font-size:15px;line-height:1.7;color:#AEB8C5;">약속한 날짜에 맞춰 납품합니다.</span>
+        </div>
+    </div>
+  </div>
+</section>
+<section id="trust" data-screen-label="06 About" style="background:#FFFFFF;">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,112px) clamp(20px,4vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(32px,6vw,80px);align-items:center;">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:14px;">
+      <div style="aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:#DCE1E7;"><img src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/web/factory.jpg" alt="광명후렉시블 공장 전경" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+      <div style="display:flex;justify-content:space-between;gap:12px;font-size:14px;color:#5A6676;"><span>울산광역시 울주군 청량읍 상남1길 20</span><span style="font-variant-numeric:tabular-nums;font-weight:600;color:#0F1B2A;">Since 2006</span></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:28px;">
+      <div style="font-size:13px;color:#B0611F;letter-spacing:0.06em;font-weight:600;">회사소개</div>
+      <div style="display:flex;flex-direction:column;gap:22px;">
+        <p data-reveal="1" data-delay="0" style="margin:0;font-size:clamp(22px,2.6vw,32px);font-weight:800;line-height:1.45;letter-spacing:-0.02em;color:#0F1B2A;text-wrap:pretty;">후렉시블조인트, 익스펜션조인트,러버조인트 메탈용신축관 등을 제작하는 전문업체입니다.</p>
+        <div style="display:flex;flex-direction:column;gap:14px;padding-left:20px;border-left:2px solid #B0611F;">
+        <p data-reveal="1" data-delay="150" style="margin:0;font-size:17px;line-height:1.8;color:#4A5768;text-wrap:pretty;">오랜 경력과 노하우를 바탕으로 <strong style="color:#0F1B2A;font-weight:700;">정직과 믿음</strong>이라는 경영이념 아래 고객만을 위해 최상의 제품들만을 제작하고</p>
+        <p data-reveal="1" data-delay="300" style="margin:0;font-size:17px;line-height:1.8;color:#4A5768;text-wrap:pretty;">정직하고 완벽한 제품과 품질을 위해 항상 최선을 다하며</p>
+        <p data-reveal="1" data-delay="450" style="margin:0;font-size:17px;line-height:1.8;color:#4A5768;text-wrap:pretty;">찾아주신 모든 고객분들께 만족을 드리기 위해 무한발전하도록 노력하는 <strong style="color:#0F1B2A;font-weight:700;">광명후렉시블</strong>이 되겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="certs" data-screen-label="06b Certificates" style="background:#0B1624;color:#FFFFFF;">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px);display:flex;flex-direction:column;gap:36px;">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:12px;">
+      <div style="font-size:13px;color:#E2A46E;letter-spacing:0.06em;font-weight:600;">인증 · 등록</div>
+      <h2 style="margin:0;font-size:clamp(24px,3vw,36px);font-weight:800;letter-spacing:-0.02em;line-height:1.35;">등록된 공장에서 직접 제작합니다</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px;">
+      <a class="gmh64" data-reveal="1" href="#certs" data-gm-lb="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/web/cert-factory.jpg" data-gm-alt="공장등록증명서" style="cursor:zoom-in;display:grid;grid-template-columns:minmax(0,clamp(96px,26vw,140px)) minmax(0,1fr);gap:clamp(14px,3vw,20px);align-items:center;padding:20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.14);border-radius:8px;color:#FFFFFF;">
+        <span style="display:block;aspect-ratio:210/297;border-radius:4px;overflow:hidden;background:#FFFFFF;box-shadow:0 8px 24px rgba(0,0,0,0.35);"><img src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/web/cert-factory.jpg" alt="공장등록증명서" style="width:100%;height:100%;object-fit:cover;display:block;"></span>
+        <span style="display:flex;flex-direction:column;gap:8px;"><span style="font-size:19px;font-weight:800;">공장등록증명서</span><span style="font-size:14px;line-height:1.7;color:#AEB8C5;">울주군청 · 강관 제조업 외 1종<br>사업시작일 2006-09-26</span><span style="font-size:13px;color:#E2A46E;font-weight:600;">크게 보기 →</span></span>
+      </a>
+      <a class="gmh65" data-reveal="1" data-delay="120" href="#certs" data-gm-lb="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/web/cert-tech.jpg" data-gm-alt="우수기술기업 인증서" style="cursor:zoom-in;display:grid;grid-template-columns:minmax(0,clamp(96px,26vw,140px)) minmax(0,1fr);gap:clamp(14px,3vw,20px);align-items:center;padding:20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.14);border-radius:8px;color:#FFFFFF;">
+        <span style="display:block;aspect-ratio:210/297;border-radius:4px;overflow:hidden;background:#FFFFFF;box-shadow:0 8px 24px rgba(0,0,0,0.35);"><img src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/web/cert-tech.jpg" alt="우수기술기업 인증서" style="width:100%;height:100%;object-fit:cover;display:block;"></span>
+        <span style="display:flex;flex-direction:column;gap:8px;"><span style="font-size:19px;font-weight:800;">우수기술기업 인증서</span><span style="font-size:14px;line-height:1.7;color:#AEB8C5;">(주)나이스디앤비 · 핵심기술 후렉시블 호스<br>인증일자 2019.04.02</span><span style="font-size:13px;color:#E2A46E;font-weight:600;">크게 보기 →</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+<section id="spec" data-screen-label="07 Spec" style="background:#F4F6F8;">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px);display:flex;flex-direction:column;gap:28px;">
+    <div data-reveal="1" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;">
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="font-size:13px;color:#B0611F;letter-spacing:0.06em;font-weight:600;">규격 자료</div>
+        <h2 style="margin:0;font-size:clamp(24px,3vw,36px);font-weight:800;letter-spacing:-0.02em;line-height:1.35;">콘트롤링형 신축관 규격표</h2>
+        <div style="font-size:15px;color:#4A5768;">32A ~ 300A · 사용압력 2 ~ 30 kgf/cm²</div>
+      </div>
+    </div>
+    <div class="gm-m"><div style="font-size:13px;color:#7A8594;">← 표를 좌우로 밀어서 확인하세요 →</div></div>
+    <div data-reveal="1" style="background:#FFFFFF;border:1px solid #DCE1E7;border-radius:8px;overflow-x:auto;-webkit-overflow-scrolling:touch;">
+      <div style="min-width:720px;">
+        <div style="display:grid;grid-template-columns:1fr repeat(6,1.1fr);background:#0B1624;color:#FFFFFF;font-size:13px;font-weight:600;line-height:1.4;">
+          <span style="padding:12px 16px;">호칭경</span>
+          <span style="padding:12px 16px;text-align:right;">길이 단식<br><span style="font-weight:400;color:#AEB8C5;">mm</span></span>
+          <span style="padding:12px 16px;text-align:right;">길이 복식<br><span style="font-weight:400;color:#AEB8C5;">mm</span></span>
+          <span style="padding:12px 16px;text-align:right;">신축반력 단식<br><span style="font-weight:400;color:#AEB8C5;">kg/mm</span></span>
+          <span style="padding:12px 16px;text-align:right;">신축반력 복식<br><span style="font-weight:400;color:#AEB8C5;">kg/mm</span></span>
+          <span style="padding:12px 16px;text-align:right;">유효경<br><span style="font-weight:400;color:#AEB8C5;">mm</span></span>
+          <span style="padding:12px 16px;text-align:right;">유효단면적<br><span style="font-weight:400;color:#AEB8C5;">cm²</span></span>
+        </div>
+          <div style="display:grid;grid-template-columns:1fr repeat(6,1.1fr);border-bottom:1px solid #E6EAEE;font-variant-numeric:tabular-nums;font-size:15px;">
+            <span style="padding:12px 16px;font-weight:700;">32A</span>
+            <span style="padding:12px 16px;text-align:right;">360</span>
+            <span style="padding:12px 16px;text-align:right;">680</span>
+            <span style="padding:12px 16px;text-align:right;">1</span>
+            <span style="padding:12px 16px;text-align:right;">0.5</span>
+            <span style="padding:12px 16px;text-align:right;">44.8</span>
+            <span style="padding:12px 16px;text-align:right;">16</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr repeat(6,1.1fr);border-bottom:1px solid #E6EAEE;font-variant-numeric:tabular-nums;font-size:15px;">
+            <span style="padding:12px 16px;font-weight:700;">40A</span>
+            <span style="padding:12px 16px;text-align:right;">400</span>
+            <span style="padding:12px 16px;text-align:right;">700</span>
+            <span style="padding:12px 16px;text-align:right;">2</span>
+            <span style="padding:12px 16px;text-align:right;">1</span>
+            <span style="padding:12px 16px;text-align:right;">54.8</span>
+            <span style="padding:12px 16px;text-align:right;">24</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr repeat(6,1.1fr);border-bottom:1px solid #E6EAEE;font-variant-numeric:tabular-nums;font-size:15px;">
+            <span style="padding:12px 16px;font-weight:700;">50A</span>
+            <span style="padding:12px 16px;text-align:right;">400</span>
+            <span style="padding:12px 16px;text-align:right;">700</span>
+            <span style="padding:12px 16px;text-align:right;">3</span>
+            <span style="padding:12px 16px;text-align:right;">1.5</span>
+            <span style="padding:12px 16px;text-align:right;">68</span>
+            <span style="padding:12px 16px;text-align:right;">36</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr repeat(6,1.1fr);border-bottom:1px solid #E6EAEE;font-variant-numeric:tabular-nums;font-size:15px;">
+            <span style="padding:12px 16px;font-weight:700;">65A</span>
+            <span style="padding:12px 16px;text-align:right;">450</span>
+            <span style="padding:12px 16px;text-align:right;">800</span>
+            <span style="padding:12px 16px;text-align:right;">5</span>
+            <span style="padding:12px 16px;text-align:right;">2.5</span>
+            <span style="padding:12px 16px;text-align:right;">83</span>
+            <span style="padding:12px 16px;text-align:right;">54</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr repeat(6,1.1fr);border-bottom:1px solid #E6EAEE;font-variant-numeric:tabular-nums;font-size:15px;">
+            <span style="padding:12px 16px;font-weight:700;">80A</span>
+            <span style="padding:12px 16px;text-align:right;">450</span>
+            <span style="padding:12px 16px;text-align:right;">800</span>
+            <span style="padding:12px 16px;text-align:right;">3</span>
+            <span style="padding:12px 16px;text-align:right;">1.5</span>
+            <span style="padding:12px 16px;text-align:right;">102</span>
+            <span style="padding:12px 16px;text-align:right;">82</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr repeat(6,1.1fr);border-bottom:1px solid #E6EAEE;font-variant-numeric:tabular-nums;font-size:15px;">
+            <span style="padding:12px 16px;font-weight:700;">100A</span>
+            <span style="padding:12px 16px;text-align:right;">450</span>
+            <span style="padding:12px 16px;text-align:right;">800</span>
+            <span style="padding:12px 16px;text-align:right;">4</span>
+            <span style="padding:12px 16px;text-align:right;">2</span>
+            <span style="padding:12px 16px;text-align:right;">102</span>
+            <span style="padding:12px 16px;text-align:right;">117</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr repeat(6,1.1fr);border-bottom:1px solid #E6EAEE;font-variant-numeric:tabular-nums;font-size:15px;">
+            <span style="padding:12px 16px;font-weight:700;">125A</span>
+            <span style="padding:12px 16px;text-align:right;">500</span>
+            <span style="padding:12px 16px;text-align:right;">900</span>
+            <span style="padding:12px 16px;text-align:right;">16</span>
+            <span style="padding:12px 16px;text-align:right;">8</span>
+            <span style="padding:12px 16px;text-align:right;">153</span>
+            <span style="padding:12px 16px;text-align:right;">185</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr repeat(6,1.1fr);border-bottom:1px solid #E6EAEE;font-variant-numeric:tabular-nums;font-size:15px;">
+            <span style="padding:12px 16px;font-weight:700;">150A</span>
+            <span style="padding:12px 16px;text-align:right;">500</span>
+            <span style="padding:12px 16px;text-align:right;">900</span>
+            <span style="padding:12px 16px;text-align:right;">16</span>
+            <span style="padding:12px 16px;text-align:right;">8</span>
+            <span style="padding:12px 16px;text-align:right;">180</span>
+            <span style="padding:12px 16px;text-align:right;">255</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr repeat(6,1.1fr);border-bottom:1px solid #E6EAEE;font-variant-numeric:tabular-nums;font-size:15px;">
+            <span style="padding:12px 16px;font-weight:700;">200A</span>
+            <span style="padding:12px 16px;text-align:right;">550</span>
+            <span style="padding:12px 16px;text-align:right;">1000</span>
+            <span style="padding:12px 16px;text-align:right;">22</span>
+            <span style="padding:12px 16px;text-align:right;">11</span>
+            <span style="padding:12px 16px;text-align:right;">239</span>
+            <span style="padding:12px 16px;text-align:right;">449</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr repeat(6,1.1fr);border-bottom:1px solid #E6EAEE;font-variant-numeric:tabular-nums;font-size:15px;">
+            <span style="padding:12px 16px;font-weight:700;">250A</span>
+            <span style="padding:12px 16px;text-align:right;">550</span>
+            <span style="padding:12px 16px;text-align:right;">1000</span>
+            <span style="padding:12px 16px;text-align:right;">30</span>
+            <span style="padding:12px 16px;text-align:right;">15</span>
+            <span style="padding:12px 16px;text-align:right;">292</span>
+            <span style="padding:12px 16px;text-align:right;">670</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr repeat(6,1.1fr);border-bottom:1px solid #E6EAEE;font-variant-numeric:tabular-nums;font-size:15px;">
+            <span style="padding:12px 16px;font-weight:700;">300A</span>
+            <span style="padding:12px 16px;text-align:right;">550</span>
+            <span style="padding:12px 16px;text-align:right;">1000</span>
+            <span style="padding:12px 16px;text-align:right;">38</span>
+            <span style="padding:12px 16px;text-align:right;">19</span>
+            <span style="padding:12px 16px;text-align:right;">346</span>
+            <span style="padding:12px 16px;text-align:right;">942</span>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" data-screen-label="08 Final CTA" style="position:relative;background:#0B1624;color:#FFFFFF;overflow:hidden;">
+  <div style="position:relative;max-width:1200px;margin:0 auto;padding:clamp(64px,9vw,120px) clamp(20px,4vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,80px);align-items:center;">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:24px;">
+      <div style="font-size:12px;letter-spacing:0.14em;color:#E2A46E;font-weight:600;">CONTACT</div>
+      <h2 style="margin:0;font-size:clamp(32px,4.4vw,56px);font-weight:800;letter-spacing:-0.035em;line-height:1.22;">원하시는 날짜를<br>알려주세요.</h2>
+      <p style="margin:0;font-size:clamp(12.5px,3.6vw,17px);line-height:1.8;color:#AEB8C5;letter-spacing:-0.01em;"><span style="display:block;white-space:nowrap;">용도와 희망 일정을 말씀해 주시면 바로 확인해 드립니다.</span><span style="display:block;white-space:nowrap;">도면은 이메일로 보내주세요.</span></p>
+    </div>
+    <div data-reveal="1" data-delay="120" style="display:flex;flex-direction:column;border:1px solid rgba(255,255,255,0.14);border-radius:12px;background:rgba(255,255,255,0.03);">
+      <div style="display:flex;flex-direction:column;gap:20px;padding:clamp(24px,3.5vw,40px);">
+        <div style="font-size:14px;color:#AEB8C5;">견적 상담 전화</div>
+        <a class="gmh66" href="tel:0522583537" style="font-size:clamp(36px,4.8vw,56px);font-weight:800;letter-spacing:-0.02em;font-variant-numeric:tabular-nums;color:#FFFFFF;line-height:1;">052-258-3537</a>
+        <a class="gmh67" href="tel:0522583537" style="display:inline-flex;align-self:flex-start;align-items:center;gap:10px;height:52px;padding:0 26px;background:#B0611F;border-radius:6px;color:#FFFFFF;font-weight:700;font-size:16px;">상담하기 <span>→</span></a>
+      </div>
+      <a class="gmh68" href="mailto:fj2006@naver.com" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px clamp(24px,3.5vw,40px);border-top:1px solid rgba(255,255,255,0.12);color:#FFFFFF;">
+        <span style="display:flex;flex-direction:column;gap:4px;"><span style="font-size:13px;color:#AEB8C5;">이메일 · 도면 송부</span><span style="font-size:17px;font-weight:600;">fj2006@naver.com</span></span>
+        <span style="color:#E2A46E;font-size:18px;">→</span>
+      </a>
+      <div style="display:flex;justify-content:space-between;gap:16px;padding:18px clamp(24px,3.5vw,40px);border-top:1px solid rgba(255,255,255,0.12);font-size:14px;color:#AEB8C5;">
+        <span>FAX</span><span style="font-variant-numeric:tabular-nums;color:#FFFFFF;">052-257-3537</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="map" data-screen-label="09 Location" style="background:#FFFFFF;">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,4vw,48px);align-items:stretch;">
+    <div style="display:flex;flex-direction:column;gap:20px;">
+      <div style="font-size:13px;color:#B0611F;letter-spacing:0.06em;font-weight:600;">오시는 길</div>
+      <div style="font-size:clamp(22px,2.6vw,30px);font-weight:800;letter-spacing:-0.02em;line-height:1.4;">울산광역시 울주군 청량읍<br>상남1길 20</div>
+      <div style="display:flex;flex-direction:column;border-top:1px solid #DCE1E7;">
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid #DCE1E7;font-size:15px;"><span style="color:#5A6676;">전화</span><a href="tel:0522583537" style="font-weight:600;font-variant-numeric:tabular-nums;">052-258-3537</a></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid #DCE1E7;font-size:15px;"><span style="color:#5A6676;">이메일</span><a href="mailto:fj2006@naver.com">fj2006@naver.com</a></div>
+      </div>
+      <a class="gmh69" href="https://map.naver.com/p/search/%EC%9A%B8%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9A%B8%EC%A3%BC%EA%B5%B0%20%EC%B2%AD%EB%9F%89%EC%9D%8D%20%EC%83%81%EB%82%A8%EB%A6%AC%20905-13?searchType=address&amp;c=16.04,0,0,0,dh" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:52px;border-radius:6px;background:#03C75A;color:#FFFFFF;font-weight:700;font-size:16px;">네이버 지도에서 길찾기 →</a>
+    </div>
+    <a href="https://map.naver.com/p/search/%EC%9A%B8%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9A%B8%EC%A3%BC%EA%B5%B0%20%EC%B2%AD%EB%9F%89%EC%9D%8D%20%EC%83%81%EB%82%A8%EB%A6%AC%20905-13?searchType=address&amp;c=16.04,0,0,0,dh" target="_blank" rel="noopener" style="display:block;min-height:300px;border:1px solid #DCE1E7;border-radius:8px;overflow:hidden;background:#F4F6F8;"><img src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_ID/Gwangmyeong-Flexible@main/assets/web/map.jpg" alt="광명후렉시블 위치 지도 (상남리 905-13)" style="width:100%;height:100%;min-height:300px;object-fit:cover;display:block;"></a>
+  </div>
+</section>
+<div id="gm-lb" style="display:none;">
+  <div data-gm="lbclose" style="position:fixed;inset:0;z-index:100;background:rgba(6,12,20,0.88);display:flex;align-items:center;justify-content:center;padding:clamp(16px,4vw,48px);cursor:zoom-out;">
+    <img data-gm="lbimg" src="" alt="" style="max-width:100%;max-height:100%;object-fit:contain;display:block;border-radius:4px;box-shadow:0 20px 60px rgba(0,0,0,0.5);background:#FFFFFF;">
+    <button data-gm="lbclose" aria-label="닫기" style="position:absolute;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,0.4);background:rgba(11,22,36,0.6);color:#FFFFFF;font-size:22px;cursor:pointer;">×</button>
+  </div>
+</div>
+<footer style="background:#08111C;color:#8B98A9;">
+  <div style="max-width:1200px;margin:0 auto;padding:40px clamp(20px,4vw,40px);display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;font-size:14px;line-height:1.8;">
+    <div style="display:flex;flex-direction:column;gap:6px;">
+      <span style="font-size:17px;font-weight:800;color:#FFFFFF;">광명후렉시블</span>
+      <span>울산광역시 울주군 청량읍 상남1길 20</span>
+      <span>TEL 052-258-3537 · FAX 052-257-3537 · E-MAIL fj2006@naver.com</span>
+    </div>
+    <div style="display:flex;gap:24px;align-items:flex-end;">
+      <a href="#trust">회사소개</a><a href="#products">제품소개</a><a href="#map">오시는 길</a>
+    </div>
+  </div>
+</footer>
+</div>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#0B1624"></rect><text x="50" y="62" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#E2A46E">GM</text></svg></template>
+</div>
+<script>
+(function(){
+var root=document.getElementById('gm-root');if(!root)return;
+var USES=[{"name":"석유화학","items":[{"name":"콘트롤링형 신축관","note":"2–30 kgf/cm²","href":"#spec"},{"name":"테프론 조인트","note":"주문 제작","href":"#products"},{"name":"후렉시블조인트 (메탈호스)","note":"진동 흡수","href":"#products"}]},{"name":"지역난방","items":[{"name":"단식·복식 강관용 신축관","note":"주문 제작","href":"#spec"},{"name":"콘트롤링형 신축관","note":"32A–300A","href":"#spec"},{"name":"자유형 신축관","note":"주문 제작","href":"#spec"}]},{"name":"조선","items":[{"name":"후렉시블조인트 (메탈호스·인터락 호스)","note":"진동 흡수","href":"#products"},{"name":"러버 커넥터","note":"진동·소음","href":"#products"},{"name":"테프론 조인트","note":"주문 제작","href":"#products"}]},{"name":"발전설비","items":[{"name":"열교환기용 벨로우즈","note":"300A–1800A","href":"#products"},{"name":"콘트롤링형 신축관","note":"2–30 kgf/cm²","href":"#spec"},{"name":"각형 신축관","note":"주문 제작","href":"#spec"}]},{"name":"환경보전","items":[{"name":"러버 커넥터","note":"진동·소음","href":"#products"},{"name":"진동 흡수용 펌프 이음","note":"진동 흡수","href":"#products"},{"name":"후렉시블조인트","note":"진동 흡수","href":"#products"}]},{"name":"제철설비","items":[{"name":"콘트롤링형 신축관","note":"2–30 kgf/cm²","href":"#spec"},{"name":"열교환기용 벨로우즈","note":"300A–1800A","href":"#products"},{"name":"각형 신축관","note":"주문 제작","href":"#spec"}]}];
+var $=function(s,c){return (c||root).querySelector(s)},$$=function(s,c){return Array.prototype.slice.call((c||root).querySelectorAll(s))};
+root.classList.add('gm-js');
+var rv=$$('[data-reveal]');
+if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('gm-in');io.unobserve(e.target);}})},{threshold:0.12});
+  rv.forEach(function(el){if(el.dataset.delay)el.style.transitionDelay=el.dataset.delay+'ms';io.observe(el);});
+}else rv.forEach(function(el){el.classList.add('gm-in');});
+/* 제품 소개 슬라이드 */
+var track=$('[data-gm="track"]'),box=$('[data-gm="lineup"]');
+if(track){
+  var n=track.children.length,cur=0,paused=false,dotWrap=$('[data-gm-dot]').parentNode,dotTpl=$('[data-gm-dot]').cloneNode(true);
+  var vis=function(){return parseInt(getComputedStyle(root).getPropertyValue('--gm-vis'),10)||5},maxS=function(){return Math.max(0,n-vis())};
+  var draw=function(){if(cur>maxS())cur=maxS();track.style.setProperty('--gm-cur',cur);
+    var m=maxS()+1;if(dotWrap.children.length!==m){dotWrap.innerHTML='';for(var i=0;i<m;i++){var d=dotTpl.cloneNode(true);d.setAttribute('data-gm-dot',i);d.setAttribute('aria-label',(i+1)+'번째');dotWrap.appendChild(d);}}
+    Array.prototype.forEach.call(dotWrap.children,function(d,i){d.style.width=i===cur?'22px':'6px';d.style.background=i===cur?'#B0611F':'#C9D0D8';});};
+  var step=function(k){var mx=maxS();cur+=k;if(cur>mx)cur=0;if(cur<0)cur=mx;draw();};
+  $('[data-gm="prev"]').addEventListener('click',function(){step(-1)});
+  $('[data-gm="next"]').addEventListener('click',function(){step(1)});
+  dotWrap.addEventListener('click',function(e){var d=e.target.closest('[data-gm-dot]');if(d){cur=+d.getAttribute('data-gm-dot');draw();}});
+  box.addEventListener('mouseenter',function(){paused=true});box.addEventListener('mouseleave',function(){paused=false});
+  setInterval(function(){if(!paused&&!document.hidden)step(1)},3200);
+  window.addEventListener('resize',draw);draw();
+}
+/* 용도별 찾기 */
+var ub=$$('[data-gm-use]'),itemsWrap=$('[data-gm="useitems"]'),itemTpl=itemsWrap&&itemsWrap.firstElementChild.cloneNode(true);
+var pick=function(i,scroll){ub.forEach(function(b,j){b.style.borderColor=j===i?'#B0611F':'transparent';b.setAttribute('aria-pressed',j===i);});
+  $$('[data-gm="usename"]').forEach(function(s){s.textContent=USES[i].name;});
+  itemsWrap.innerHTML='';USES[i].items.forEach(function(it){var a=itemTpl.cloneNode(true);a.setAttribute('href',it.href);var sp=a.querySelectorAll('span');sp[0].textContent=it.name;sp[1].textContent=it.note;itemsWrap.appendChild(a);});
+  if(scroll){var el=document.getElementById('use-detail');window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-84,behavior:'smooth'});}};
+ub.forEach(function(b){b.addEventListener('click',function(){pick(+b.getAttribute('data-gm-use'),true)});});
+if(ub.length)pick(0,false);
+/* 인증서 크게 보기 */
+var lb=document.getElementById('gm-lb'),lbImg=$('[data-gm="lbimg"]');
+var closeLb=function(e){if(e)e.stopPropagation();lb.style.display='none';lbImg.src='';};
+$$('[data-gm-lb]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();lbImg.src=a.getAttribute('data-gm-lb');lbImg.alt=a.getAttribute('data-gm-alt');lb.style.display='block';});});
+$$('[data-gm="lbclose"]').forEach(function(x){x.addEventListener('click',closeLb);});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.style.display!=='none')closeLb();});
+})();
+</script>
